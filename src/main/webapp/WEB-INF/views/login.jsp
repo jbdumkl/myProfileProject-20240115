@@ -26,7 +26,7 @@
 		<tr>
 			<td class="con_box" align="center">
 				<table border="0" cellpadding="10" cellspacing="0">
-				<form action="login">
+				<form action="loginOk" method="post" name="loginForm">
 					<tr>
 						<td class="con text">아 이 디 : </td>
 						<td><input class="input box01" type="text" name="mid"></td>
@@ -35,7 +35,6 @@
 						<td class="con text">비밀번호 : </td>
 						<td><input class="input box01" type="password" name="mpw"></td>
 					</tr>
-
 					<tr>
 						<td colspan="2">&nbsp;</td>
 					</tr>

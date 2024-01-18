@@ -18,8 +18,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-
-
 @Controller
 public class MemberController {
 	
@@ -59,7 +57,7 @@ public class MemberController {
 			model.addAttribute("joinFail", 1);
 		}
 			
-			return "joinOk";
+		return "joinOk";
 	}
 	
 	@GetMapping(value = "/login")

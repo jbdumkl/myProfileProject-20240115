@@ -13,6 +13,7 @@ span.menutext {
 
 a:link {
 	text-decoration:none;
+	color:inherit;
 }
 
 a:hover {

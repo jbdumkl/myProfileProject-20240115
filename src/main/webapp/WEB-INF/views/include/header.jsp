@@ -16,7 +16,7 @@
 				<a href="index"><span class="menutext">home</span></a>
 			</td>
 			<c:choose>
-				<c:when test="${sessionScope.sessionId eq null }">
+				<c:when test="${sessionScope.sessionId eq null}">
 					<td width="4%" align="center">
 						<a href="login"><span class="menutext">login</span></a>
 					</td>
@@ -39,7 +39,7 @@
 			</td>
 			
 			<td width="4%" align="center">
-				<a href="#"><span class="menutext">board</span></a>
+				<a href="board"><span class="menutext">board</span></a>
 			</td>
 			<td width="4%" align="center">
 				<a href="#"><span class="menutext">contact</span></a>
@@ -50,9 +50,9 @@
 		</tr>
 		<tr height="20">
 			<c:if test="${sessionScope.sessionId != null}">
-				<td colspan="9" align=" align="right">
-				<span style="font-family: Arial; font-size: 14px; color: #0B60B0; font-weight: bold"></span>
-					<c:out value="${sessionScope.sessionId }"></c:out>님 로그인 중
+				<td colspan="9" align="right">
+					<span style="font-family: Arial; font-size: 14px; color: #6799FF;">
+						member : </span><span style="font-family: Arial; font-size: 14px; color: #0B60B0; font-weight: bold;"><c:out value="${sessionScope.sessionId }"></c:out></span>
 				</td>
 			</c:if>
 		</tr>

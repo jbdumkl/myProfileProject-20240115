@@ -49,7 +49,12 @@
 			</td>
 		</tr>
 		<tr height="20">
-			<td>&nbsp;</td>
+			<c:if test="${sessionScope.sessionId != null}">
+				<td colspan="9" align=" align="right">
+				<span style="font-family: Arial; font-size: 14px; color: #0B60B0; font-weight: bold"></span>
+					<c:out value="${sessionScope.sessionId }"></c:out>님 로그인 중
+				</td>
+			</c:if>
 		</tr>
 	</table>
 </body>

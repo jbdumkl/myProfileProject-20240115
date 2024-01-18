@@ -82,18 +82,18 @@ public class MemberController {
 			System.out.println(memberDto.getMdate());
 			model.addAttribute("memberDto", memberDto);
 			//로그인한 유저의 아이디로 검색하여 해당 유저의 모든 정보를 loginOk.jsp로 전달
+			model.addAttribute("loginFail", 0);//로그인 성공시 전송
 		} else {
-			model.addAttribute("loginFail", 1);
+			model.addAttribute("loginFail", 1);//로그인 실패시 전송
 			//로그인 실패시 logFail 값을 1로 설정하여loginOk.jsp로 전달
 		}
 		return "loginOk";
 	}
 			
 	@GetMapping(value = "logout")
-	public String logout(HttpSession session, HttpServletRequest request) throws IOException {
-		
-		session.invalidate();//세션 삭제 ->로그 아웃
-		
+	public String logout(HttpSession session, HttpServletResponse response) throws IOException {
+
+		// 컨트롤러에서 경고창 띄우기
 		response.setContentType("text/html;charset=utf-8");//utf-8로 경고창에 출력될 문자셋 셋팅
 	    response.setCharacterEncoding("utf-8");
 	      
@@ -101,6 +101,8 @@ public class MemberController {
 	      
 	    printout.println("<script>alert('"+ "로그아웃 하시겠습니까?" +"');location.href='"+"login"+"';</script>");
 	    printout.flush();
+	    
+	    session.invalidate();//세션 삭제 ->로그 아웃
 		
 		return "login";
 	}

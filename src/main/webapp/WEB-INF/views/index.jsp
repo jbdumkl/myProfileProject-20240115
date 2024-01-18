@@ -23,7 +23,7 @@
 		</tr>
 		<tr>
 			<td>
-				<table border="0" cellpadding="10" cellspacing="0">
+				<table border="1" cellpadding="10" cellspacing="0">
 					<tr>
 						<td class="skillbox">
 							<span class="title03">J</span><span class="title04">AVA</span>

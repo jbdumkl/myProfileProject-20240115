@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 tr.footerline {
-	background-color: rgb(2055,0,0); 
+	background-color: #0F1035; 
 	height: 35px;
 }
 
 span.footertext {
 	font-size: 20px;
-	font-family: serif;
-	color: #9ADE7B;
+	font-family: Arial;
+	color: #DCF2F1;
 }

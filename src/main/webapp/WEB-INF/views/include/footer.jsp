@@ -9,7 +9,7 @@
 </head>
 <body>
 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-		<tr height="20">
+		<tr height="50">
 			<td>&nbsp;</td>
 		</tr>
 		<tr class="footerline">
@@ -22,7 +22,7 @@
 		<tr class="footerline">
 			<td align="center">
 				<span class="footertext">
-					This homepage is built with Spring Framework. Made by MyungKyu-Lee. E-mail:gglmkl@gmail.com
+					This homepage is built with Spring Framework. Made by MyungKyu-Lee. E-mail: gglmkl@gmail.com
 				</span>
 			</td>
 		</tr>
